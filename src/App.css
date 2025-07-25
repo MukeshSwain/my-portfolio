@@ -1,0 +1,57 @@
+/* Tailwind handles most styling — this file is now minimal & utility-supportive */
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #f0f8ff, #f8fafc);
+}
+
+/* Logo Styling (Optional - remove if unused) */
+.logo {
+  height: 5rem;
+  padding: 1rem;
+  transition: filter 300ms ease;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1em rgba(99, 102, 241, 0.5)); /* indigo */
+}
+
+/* Optional React logo */
+.logo.react:hover {
+  filter: drop-shadow(0 0 1em rgba(97, 218, 251, 0.6)); /* cyanish blue */
+}
+
+/* Spin animation for rotating logos */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Only spin on users who haven't disabled animations */
+@media (prefers-reduced-motion: no-preference) {
+  .logo-spin {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card utility styling */
+.card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Light muted text class */
+.read-the-docs {
+  color: #6b7280; /* Tailwind's gray-500 */
+  font-size: 0.875rem;
+}
