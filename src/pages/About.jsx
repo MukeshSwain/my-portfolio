@@ -28,30 +28,42 @@ const About = () => {
           About Me
         </h2>
 
-        {/* Bio */}
+        {/* Intro */}
         <p className="text-lg leading-relaxed text-gray-700 mb-6">
-          I’m a <strong>Full-Stack Developer</strong> specializing in the{" "}
-          <strong>MERN stack</strong> with a passion for building robust
-          backends, scalable systems, and AI-powered tools. I believe in the
-          power of clean code, real-time tech, and intuitive design to solve
-          real-world problems.
+          I’m a <strong>Full-Stack Developer</strong> specialized in the{" "}
+          <strong>MERN stack</strong> with a strong focus on backend
+          development, real-time features, and building scalable systems.
         </p>
 
-        <p className="text-lg leading-relaxed text-gray-700 mb-6">
-          I’ve worked on secure platforms with <strong>JWT auth</strong>,
-          real-time communication using <strong>Socket.io</strong>, and data
-          visualization via <strong>Recharts</strong>. My toolbelt includes
-          <strong>
-            {" "}
-            Node.js, Express, React, MongoDB, Redux, Tailwind CSS, and Gemini AI
-          </strong>
-          .
-        </p>
+        {/* Highlights */}
+        <div className="text-left max-w-3xl mx-auto text-gray-700 text-base sm:text-lg space-y-4 mb-8">
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              💡 I create secure and maintainable APIs using{" "}
+              <strong>Node.js</strong> and <strong>Express.js</strong>
+            </li>
+            <li>
+              🧠 I’ve implemented <strong>JWT authentication</strong>, real-time
+              communication via <strong>Socket.io</strong>, and AI-enhanced
+              tools using APIs like Gemini
+            </li>
+            <li>
+              📊 Proficient in data-driven components with libraries like{" "}
+              <strong>Recharts</strong>
+            </li>
+            <li>
+              ⚡ Focused on performance, clean code, and team-friendly
+              architecture
+            </li>
+          </ul>
+        </div>
 
+        {/* Soft Skills */}
         <p className="text-lg leading-relaxed text-gray-700 mb-6">
-          I enjoy learning new technologies and contributing to impactful
-          projects through backend architecture, API design, and collaborative
-          teamwork.
+          I'm a fast learner, an open communicator, and deeply value working in
+          collaborative environments where feedback and ownership go hand in
+          hand. I thrive on shipping real-world solutions and improving
+          developer experience.
         </p>
 
         {/* Tech Stack */}
@@ -89,7 +101,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* Call to Action */}
+        {/* CTA */}
         <div
           className="mt-12 flex justify-center gap-4"
           data-aos="fade-up"

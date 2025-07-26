@@ -8,12 +8,20 @@ const skills = {
     "Node.js",
     "Express.js",
     "REST APIs",
-    "JWT",
+    "JWT Authentication",
     "MongoDB",
     "MySQL",
     "Flask",
+    "Spring Boot (Learning)",
   ],
-  Tools: ["Postman", "Git", "GitHub", "Docker (basic)", "Linux", "Nodemailer"],
+  Tools: [
+    "Git & GitHub",
+    "Postman",
+    "Docker (basic)",
+    "Linux",
+    "Nodemailer",
+    "VS Code",
+  ],
 };
 
 const categoryIcons = {
@@ -74,6 +82,12 @@ const Skills = () => {
             ))}
           </ul>
         </div>
+
+        {/* Learning Note */}
+        <p className="mt-8 text-sm text-gray-600 italic">
+          🚀 Always learning — currently exploring Spring Boot & advanced
+          backend concepts.
+        </p>
       </div>
     </section>
   );
